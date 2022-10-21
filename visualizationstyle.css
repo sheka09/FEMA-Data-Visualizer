@@ -1,0 +1,25 @@
+
+.container {  display: grid;
+  grid-template-columns: 2fr 4.5fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+}
+
+.menu { grid-area: 1 / 1 / 2 / 2;
+background-color: rgb(9, 9, 9); 
+color:#FFFFFF
+;
+
+}
+
+#map { grid-area: 1 / 2 / 2 / 3; }
+
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+.form{
+display: block;
+text-align: center;}

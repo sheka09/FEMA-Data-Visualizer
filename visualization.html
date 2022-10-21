@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+   integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+   integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+   crossorigin=""></script>
+   <link rel="stylesheet" href="./visualizationstyle.css"/>
+ <title>Fema Disaster Map</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="menu">
+    <h2  style="text-align:center; font-size:40px;"
+      >FEMA Climate Hazard<br/> Data Visualization </h2>
+      <h5 style="text-align:center; font-size:20px;">An interactive map of natural disasters of the lower 48 states.</h5>
+<div class="form">
+  <h4 style="font-size: 18px;">Please select the incident type and dates below.</h4>
+
+    <form id="disaster_form">
+<label>
+   <h5>Select a disaster type
+   <select name="incident types" id="incidents">
+<option value="Biological">Biological</option>
+<option value="Chemical">Chemical</option>
+<option value="Coastal storm">Coastal Storm</option>
+<option value="Dam/levee break">Dam/Levee Break</option>
+<option value="Drought">Drought</option>
+<option value="Earthquake">Earthquake</option>
+<option value="Flood">Flood</option>
+<option value="Fire">Fire</option>
+<option value="Freezing">Freezing</option>
+<option value="Human cause">Human Cause</option>
+<option value="Hurricane">Hurricane</option>
+<option value="Mud/landslide">Mud/Landslide</option>
+<option value="Other">Other</option>
+<option value="Sever ice storm">Severe Ice Storm</option>
+<option value="Sever storm(s)">Severe Storm(s)</option>
+<option value="Snow">Snow</option>
+<option value="Terrorist">Terrorist</option>
+<option value="Tornado">Tornado</option>
+<option value="Volcano">Volcano</option>
+
+   </select>
+  </h5>
+  </label>
+  
+    <label for="date">Incident Begin Date:</label>
+<input type="date" name="date" id="begin_date">
+  <br>
+<label for="date">Incident End Date:</label>
+<input type="date" name="date" id="end_date">
+
+  <div>
+  <button id="btn" type="submit">Submit</button>
+  </div>
+
+    </form>
+
+  </div>
+  
+  </div>
+  <div id="map"></div>
+
+</div>
+  
+<script type="module" src="visualization.js" defer="defer"></script>
+</body>
+
+</html>

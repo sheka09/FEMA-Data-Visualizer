@@ -1,0 +1,15 @@
+{
+  "name": "sba_javascript",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "fema hazard",
+  "main": "1",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "climate"
+  ],
+  "author": "biniam e",
+  "license": "ISC"
+}
