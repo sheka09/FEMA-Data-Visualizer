@@ -9,7 +9,7 @@
    integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
    crossorigin=""></script>
    <link rel="stylesheet" href="./visualizationstyle.css"/>
- <title>Fema Disaster Map</title>
+ <title>Fema Disaster VisualizationMap</title>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
 
     <form id="disaster_form">
 <label>
-   <h5>Select a disaster type
+  <h4> Disaster type</h4>
    <select name="incident types" id="incidents">
 <option value="Biological">Biological</option>
 <option value="Chemical">Chemical</option>
@@ -46,24 +46,20 @@
 <option value="Volcano">Volcano</option>
 
    </select>
-  </h5>
   </label>
   
-    <label for="date">Incident Begin Date:</label>
+    <label for="date"><h4>Incident Begin Date</h4></label>
 <input type="date" name="date" id="begin_date">
   <br>
-<label for="date">Incident End Date:</label>
+<label for="date"><h4>Incident End Date</h4></label>
 <input type="date" name="date" id="end_date">
 
   <div>
   <button id="btn" type="submit">Submit</button>
   </div>
-
     </form>
-
   </div>
-  
-  </div>
+    </div>
   <div id="map"></div>
 
 </div>
